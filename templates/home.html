@@ -1,0 +1,137 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Arts Club 2021</title>
+    <link href="{% static 'style.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body class="color">
+    <div class="container">
+        <div class="row d-flex">
+                {% include 'navbar.html' %}
+                {% block content %}
+                {% endblock %}
+        </div>
+    </div>
+    <div class="container cont">
+        <div class="section">
+        <div class="row hero">
+            <div class="col-lg-8 page1-left">
+                <h1 style="font-size: 56pt; font-weight: bold;">Visual Arts Club</h1>
+                <p>Film Making/Editing/Script Writing/Music Production</p>
+                <a style="text-decoration: none;" href="/join"><button type="button" class="btn-grad">Join Now</button></a>
+            </div>
+            <div class="col-lg-4 no-gutters d-flex justify-content-center page1-right">
+                <div class="box">
+                    <h4 style="font-weight: 500; text-align: left;">Upcoming Events</h4>
+                    <ul>
+                        <li>Tentkotta 3.0</li>
+                        <li>Tentkotta 4.0</li>
+                        <li>Workshop on Cinematography</li>
+                    </ul>
+                    <h4 style="font-weight: 500; text-align: left;">Important Messages</h4>
+                    <ul>
+                        <li>Orientation for Freshers</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="section justify-content-center hero2">
+        <div class="row-vh-100">
+            <h3 style="text-align: center; color:#8b94a1" class="bold">Shoutout to our Script Writers</h3><br>
+            <div class="col-sm-12 mx-auto justify-content-center script">
+                <img src="{% static 'cover1.jpg' %}" width=150px height:=200px></img>
+                <img src="{% static 'cover2.jpg' %}" width=150px height:=200px></img>
+                <img src="{% static 'cover3.jpg' %}" width=150px height:=200px></img>
+                <img src="{% static 'cover4.jpg' %}" width=150px height:=200px></img>
+            </div>
+        </div>
+        <br>
+        <hr style="height:5px; border-radius:10px; width:100%">
+        </div>
+        </div>
+        
+        <div class="container cont">
+        <div class="section">
+        <div class="row hero3">
+            <div class="col-lg-6 d-flex justify-content-center" style="padding-bottom:5vh">
+                <img src="{% static 'works.png' %}" class="imgs">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="bold">Who we are?</h1>
+                <p>We are a group of like minded graphic artists hiking towards skill development.<br><br>Say what? <b>"TENTKOTTA SINCE 2019"</b> and it is fortuitously sprinting till date. Prof Helen from EEE department is leading our club as the Incharge faculty.<!--Our club is superintend by our GENERAL SECRETARIES- Rithish visakan(Civil) and Sugatheeswari(ECE) and JOINT SECRETARIES- HARISH from CSE dept, Raji Santoshi from ECE dept.--><br><br>We impart not only mere skills but also the ability to think out of the box. Be the best version of yours!</p>
+            </div>
+        </div>
+        </div>
+        <br><hr><br>
+        <div class="section">
+        <div class="row hero3">
+            <div class="col-lg-6">
+                <h1 class="bold">What we do?</h1>
+                <p>The Visual Arts club of TCE, built and running upon the friendship and trust between eachother, we conduct lots of amazing events and gatherings not only to develop our skills but also to have fun.<!--<br><br>The Major event "KALAI CIRCUS" is been held every year as a great festival. We welcome the freshers with a grand fest and events to collaborate and have fun. Our club, "Tentkotta", that's what we are now, script writers release a serieas as a regular post of continuous events, both in tamil and english. 'Mega Shrishti', the grand utsav of our college is completely anchored by our club members.--><br><br>Our club also facilitate workshops with real time media personalities. We also extend our hand to other clubs for logo, certificate designing and promotion too. As the name goes <b>"TENTKOTTA"</b>, we are a family facing the same screen on the same scene!!</p>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-center" style="padding-top:5vh; padding-bottom:5vh">
+                <img src="{% static 'works.png' %}" class="imgs">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <div class="section">
+        <div class="row hero3">
+            <div class="col-lg-6 d-flex justify-content-center" style="padding-bottom:5vh">
+                <img src="{% static 'works.png' %}" class="imgs">
+
+            </div>
+            <div class="col-lg-6">
+                <h1 class="bold">Our Achievements</h1>
+                <p>Shortlisted in <b>National Level Shortfilm Competition</b> Conducted by </b>MOEF & CC Regarding Awareness On The Hazards of Pollution</b><br><br>
+                    Awareness Video for <b>The Precaution to be taken in the Pandemic.</b><br><br>
+                     Video Coverage of <b>Culturals, Sports and other events</b> conducted in College.</p>
+            </div>
+        </div>
+        </div>
+    <div class="section d-flex justify-content-center">
+        <div class="row box2">
+                <div class="col-sm-8">
+                    <h1 class="bold">Wanna be a member?</h1>
+                    <p>Are you passionate about visual arts? Or maybe just curious about them?<br>TCE Visual Arts Club is dedicated to encouraging creative expression and furthering knowledge and appreciation of the achievements for its members.
+                        <!--
+                        We excel in the fields of 
+                        - scriptwriting/ Direction 
+                        - Video editing 
+                        - Acting/Anchoring and Dubbing 
+                        - Illustration works
+                        - Cinematography 
+                        - Music Production 
+                        through engaging in works like short film making , inviting aluminis, healthy interactions with seniors to gain immense knowledge, expressing themselves through acting and anchoring etc.--><BR>The group is open to all the members of TCE and meets weekly on (whatever day).</p>
+                </div>
+                <div class="col-sm-4 d-flex justify-content-center align-items-center">
+                    <a href="/join"><button class="button-23" role="button">Join Now</button></a>
+                </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="row" style="padding:10vh">
+                    <div class="col-lg-6">
+                        <img src="#">
+                    </div>
+                    <div class="col-lg-6">
+                        <h6>2021 TCE Visual Arts Club</h6>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+</body>
+<!-- CSS only -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</html>

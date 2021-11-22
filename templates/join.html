@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <link rel="stylesheet" href="{% static 'join.css' %}" type="text/css">
+</head>
+<body class="color">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+            <h1 class="bold">Join Now!</h1><br>
+            <p style="font-size: 16pt;">Kudos to you! 
+                 Because you are going to experience the greatest experience by joining our TCE VISUAL ARTS CLUB. Now you’re provided with a door and all you have to do is to grab the handle and open the door.
+                 <!--You will be mesmerised by visualising plenty of opportunities for you at the other end of the door.
+                Trust the process! It’s worth it. 
+                Alright people! Enough of all the chitchat and let’s get to the good stuff. -->
+                Now fill out this registration form and 
+                VOILÀ…..
+                You are a part of VISUAL ARTS CLUB.<br><br>
+                For any further information or for clarifying any doubts, 
+                Contact @tcevisualarts</p>
+            </div>
+        </div>
+            <div class="row cont-box">
+                <img src="{%static 'join.svg'%}" style="height:400px; margin:5%">
+            <div class="col-lg-4">
+                <form action='' method="POST">
+                    {% csrf_token %}
+                    <div class="field box2">
+                    {% for field in form %}
+                            <label for="{field.id_for_label}" class="label">{{field.html_name}}*</label><br>
+                            {{ field }}
+                            <br><br>
+                            {% endfor %}
+                    </div>
+                        <div class="text-center">
+                        <input id="btn" type="submit" name='Submit' class="d-flex justify-content-center red-btn"></input>
+                        </div>
+                </form>
+            </div>
+            <div class="col-lg-8">
+                <p style="font-size: 18pt;">Be drawn to this club,
+                    <br><br>
+                    For it will expand your imagination,
+                    For it will widen your creativity 
+                    And more importantly 
+                    For it will bring you to greater heights! 
+                    <br><br>
+                    Let’s not forget that what you have with you permanently is your knowledge, not money, not anything else except knowledge! 
+                    <br><br>
+                    There is no greater person in this room that shines brighter than a person with great knowledge. And it does come only when you take one step at a time. This is just a first step. For those who wish for it to be a passion or even a hobby, you must first thoroughly know what you’re learning! What better way to learn about the cine world than to be a part of that world, right? 
+                    <br><br>
+                    So guys, buckle up! It’s time for a glorious ride and a different level of fun! Cheers to a new beginning</p>
+            </div>
+</div>
+</div>
+</body>
+<script>
+    date=document.getElementById("id_DateOfBirth")
+    date.type="Date"
+    btn=document.getElementById("btn")
+    btn.addEventListener('click',function(){
+        btn.value="Submitting..."
+        console.log(btn)
+    })
+
+</script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</html>
